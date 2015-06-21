@@ -14,6 +14,7 @@ function hello.run(...)
         print(i, a)
     end
     print "I do nothing yet, however."
+    return true
 end
 
 return hello
