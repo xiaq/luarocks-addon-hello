@@ -1,5 +1,5 @@
 package = 'luarocks-addon-hello'
-version = 'scm'
+version = 'scm-1'
 source = {
     url = 'git://github.com/xiaq/luarocks-addon-hello.git',
 }
