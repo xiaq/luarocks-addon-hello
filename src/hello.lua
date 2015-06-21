@@ -23,4 +23,6 @@ function hello.run(...)
     return true
 end
 
+here is an error
+
 return hello
