@@ -1,9 +1,15 @@
 local hello = {}
 
+local api = require("luarocks.api")
+
+local function hello_callback(to)
+    print("Hello, "..to.."!")
+end
+
 function hello.load()
+    api.register_rockspec_field("hello", { _type = "string" }, hello_callback)
     print "Hello!"
     print "You have loaded the addon 'hello' in your rockspec."
-    print "I do nothing yet, however."
 end
 
 function hello.run(...)
